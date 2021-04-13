@@ -41,10 +41,8 @@
 }
 
 .modal__close{
-    width: 35px;
-    height: 35px;
     padding: 0;
-
+    border: none;
     background: none;
     cursor: pointer;
 
@@ -55,9 +53,11 @@
 
     transition: transform .2s linear;
 
-    & img{
+    img{
         border-radius: 50%;
         border: solid 1px #fff;
+        width: 35px;
+        height: 35px;
     }
 
     &:hover{
