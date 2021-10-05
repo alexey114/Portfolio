@@ -784,14 +784,15 @@
                     <li class="contact__info-item"><img src="https://www.placehold.it/15x15" alt="E-mail" class="contact__info-icon">bomko.aleksey@gmail.com</li>
                 </ul>
 
-                <form class="form" action="#" method="post">
+                <form id="form" class="form__body" action="#" method="post">
+
                     <div class="form__group">
-                        <label for="input-email" class="form__label">E-mail адрес</label>
-                        <input class="form__input" name="input-email" id="input-email" type="e-mail" placeholder="e-mail">
+                        <label for="input-email" class="form__label">E-mail адрес*</label>
+                        <input class="form__input _req _email" name="input-email" id="input-email" type="e-mail" placeholder="e-mail">
                     </div>
                         <div class="form__group">
                             <label for="input-text" class="form__label">Текст</label>
-                            <textarea class="form__textarea" name="input-text" id="input-text" placeholder="Сообщение"></textarea>
+                            <textarea class="form__textarea _req" name="input-text" id="input-text" placeholder="Сообщение"></textarea>
                         </div>
 
                         <div class="form__group">
@@ -801,13 +802,12 @@
                                     <input id="formImage" accept=".jpg, .png, .gif" type="file" name="image" class="file_input">
                                     <div class="file_button">Выбрать</div>
                                 </div>
-                                <div class="file_preview">
-                                    
-                                </div>
+                                <div id="formPreview" class="file_preview"></div>
+
                             </div>
-                            <div class="checkbox">
-                                <input id="formAggrement" type="checkbox" name="aggrement" class="chekbox_input">
-                                <label for="formAggrement" class="checkbox__label"><span>Я даю своё согласие на обработку персональных данных в соответствии с условиями*</span></label>
+                            <div class="checkbox" >
+                                <input id="formAggrement" checked type="checkbox" name="aggrement" class="checkbox_input _req">
+                                <label for="formAggrement" type="checkbox" class="checkbox__label"><span>Я даю своё согласие на обработку персональных данных в соответствии с <a href="#">условиями</a>*</span></label>
                             </div>
                         </div>
 
@@ -826,6 +826,7 @@
 <!--JS-->
 <script src="js/slick.min.js"></script>
 <script src="js/app.js"></script>
+<script src="js/form.js"></script>
 
 </body>
 </html>
