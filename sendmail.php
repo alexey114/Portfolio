@@ -1,9 +1,9 @@
 <?php
-    use php\PHPMailer-6.5.1\PHPMailer; //Подключение файлов из папки PHPMailer для работы плагина
-    use php\PHPMailer-6.5.1\Exception;
+    use PHPMailer\PHPMailerc\PHPMailer; //Подключение файлов из папки PHPMailer для работы плагина
+    use PHPMailer\PHPMailer\Exception;
 
-    requere 'php/PHPMailer-6.5.1/src/Exception.php';
-    requere 'php/PHPMailer-6.5.1/src/PHPMailer.php';//end
+    requere 'phpmailer/src/Exception.php';
+    requere 'phpmailer/src/PHPMailer.php';//end
 
     $mail = new PHPMailer(true); //Объявление файла
     $mail -> CharSet = 'UTF-8'; //Кодировка
