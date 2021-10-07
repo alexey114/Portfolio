@@ -14,20 +14,20 @@ document.addEventListener('DOMContentLoaded', function() { //Проверка н
 
         if(error === 0) {
             form.classList.add('_sending');
-             let response = await fetch('sendmail.php', {
+            let response = await fetch('sendmail.php', {
                 method: 'POST',
                 body: formData
-             });
-             if(response.ok) {
+            });
+            if(response.ok) {
                 let result = await response.json();
                 alert(result.message);
                 formPreview.innerHTML = '';
                 form.reset();
                 form.classList.remove('_sending');
-             } else {
+            } else {
                 alert("Ошибка");
                 form.classList.remove('_sending');
-             }
+            }
         } else {
             alert('заполните обязательные поля')
         }
@@ -101,9 +101,9 @@ document.addEventListener('DOMContentLoaded', function() { //Проверка н
             formPreview.innerHTML = `<img src="${e.target.result}" alt="Фото">`;
         };
         reader.onerror = function (e) {
-            alert('Ошибка');
-          };          
-          reader.readAsDataURL(file);
-      }
+            alert('Ошибка FileReader');
+        }; 
+        reader.readAsDataURL(file);
+    }
 
 });

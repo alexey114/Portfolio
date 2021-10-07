@@ -1,9 +1,9 @@
 <?php
-    use PHPMailer\PHPMailerc\PHPMailer; //Подключение файлов из папки PHPMailer для работы плагина
+    use PHPMailer\PHPMailer\PHPMailer; //Подключение файлов из папки PHPMailer для работы плагина
     use PHPMailer\PHPMailer\Exception;
 
-    requere 'phpmailer/src/Exception.php';
-    requere 'phpmailer/src/PHPMailer.php';//end
+    require 'phpmailer/src/Exception.php';
+    require 'phpmailer/src/PHPMailer.php';//end
 
     $mail = new PHPMailer(true); //Объявление файла
     $mail -> CharSet = 'UTF-8'; //Кодировка
@@ -11,7 +11,7 @@
     $mail ->IsHTML(true); //HTML теги в письме
 
     //От кого письмо:
-    $mail -> setForm('bomkoar@gmail.com', 'Человек');
+    $mail -> setFrom('bomkoar@gmail.com', 'Человек');
     //Кому отправить:
     $mail -> addAddress('bomko.aleksey@gmail.com');
     //Тема письма:
@@ -34,10 +34,10 @@
         //путь загрузки файла
         $filePath = __DIR__ . "/files/" . $_FILES['image']['name'];
         //грузим файл
-        if (copy($_FILES['image']['tmp_name'], filePath)){
+        if (copy($_FILES['image']['tmp_name'], $filePath)){
             $fileAttach = $filePath;
             $body.='<p><strong>Фото в приложении: </strong>';
-            $mail->addAttchment($fileAttach);
+            $mail->addAttachment($fileAttach);
         }
     }
 
@@ -45,13 +45,13 @@
 
     //Отправляем 
     if (!$mail->send()) {
-        $message = 'Ошибка';
+        $message = 'Ошибка php';
     } else {
         $message = 'Данные отправленны!';
     }
 
-    $responce = ['message' => $message]; //формируем json
+    $response = ['message' => $message]; //формируем json
 
     header('Content-type: application/json'); //возвращаем в JS на сайте
-    echo json_encode($responce);
+    echo json_encode($response);
     ?>
