@@ -1,0 +1,36 @@
+// main: ../style.less
+
+.cookie {    
+    display: block;
+    position: absolute;
+    top: -50px;    
+    width: 35%;
+    margin: 10px;
+    padding: 10px 60px 2px 5px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: black;
+    color: rgb(248, 246, 246);
+    z-index: 1000;
+    transform: translate(0px, 50px);
+    transition-duration: 3s;
+
+    @media @mobile {
+        width: 95%;
+        transform: translate(0px, 200px);
+    }
+
+    @media @mobile-sm {
+        width: 95%;
+        transform: translate(0px, 300px);
+    }
+}
+
+.cookie.closed{
+    display: none;
+}
+
+.modal__close_cookie{
+    background-color: @white;
+    border-radius: 50px;
+}
