@@ -19,7 +19,7 @@
         <button class="modal__close modal__close_cookie" type="button" data-close><img src="images/icon/close.svg" alt="Close"></button>      
     </div>  
 </div>
-
+<?php echo "123" ?>
 <!--Header-->
     <header class="header">
         <div class="container">
@@ -279,7 +279,7 @@
                 <div class="articles__col">
                     <div class="articles__item">
                         <div class="articles__header">
-                            <time class="articles__date">6<br>апреля<br>2021</time>
+                            <time class="articles__date">10<br>октября<br>2021</time>
                             <a href="#">
                                <img src="images/Clear cod.jpg" alt="" class="articles__foto">
                             </a>                            
@@ -290,12 +290,14 @@
                             </a>
                             <div class="articles__cat">Книги</div>
                             <div class="articles__text">
-                                <p>Сейчас в процессе прочтения. Есть хорошие советы и примеры с вырезками кода и пояснениями, что было плохо и как улучшить. Пока только положительные эмоции!</p>
+                                <p> Прочитана 1\3. Прочитал главы относящиеся к следующим составным звеньям крепкой цепи под названием "ЧИСТЫЙ КОД":</p>
                             </div>
                         </div>
-                        <a href="#" class="btn btn--sm">Читать дальше</a>
+                        <a href="btn" class="btn btn--sm" data-modal="#modal_book">Читать дальше</a>
                     </div>
                 </div> <!--articles__col-->
+
+                
 
                 <!-- <div class="articles__col">
                     <div class="articles__item">
@@ -751,26 +753,6 @@
 
                     </div>
 
-                    <!-- <h4 class="timeline__title">Олимпиады</h4>
-
-                    <div class="timeline__item">
-                        <time class="timeline__date" datetime="11-21-2021">2016</time>
-                        <h5 class="timeline__subtitle">THE BEST APP INTERFACE</h5>
-                        <div class="timeline__position">UI/UX Magazine</div>
-                        <div class="timeline__text"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, nobis quod at, velit unde autem voluptates. Eaque beatae voluptatum velit sequi voluptatibus perspiciatis quis et quisquam, facere quaerat nobis esse.</p>
-                        </div>
-                    </div> -->
-
-                    <!-- <h4 class="timeline__title">Курсы</h4>
-
-                    <div class="timeline__item">
-                        <time class="timeline__date" datetime="11-21-2021">2016</time>
-                        <h5 class="timeline__subtitle">THE BEST APP INTERFACE</h5>
-                        <div class="timeline__position">UI/UX Magazine</div>
-                        <div class="timeline__text"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, nobis quod at, velit unde autem voluptates. Eaque beatae voluptatum velit sequi voluptatibus perspiciatis quis et quisquam, facere quaerat nobis esse.</p>
-                        </div>
-                    </div> -->
-
                 </div> <!--timeline__col timeline__col--right-->
 
             </div> <!--timeline-->
@@ -838,6 +820,32 @@
     </div> <!--/modal__dialog-->
 
 </div>    <!--/modal-->
+
+<div class="modal" id="modal_book">
+    <div class="modal__dialog">
+
+        <button class="modal__close" type="button" data-close><img src="images/icon/close.svg" alt="Close"></button>
+
+
+        <div class="articles__item articles__item_modal">
+            <div class="articles__header">
+                <time class="articles__date">10<br>октября<br>2021</time>
+                <a href="#">
+                   <img src="images/Clear cod.jpg" alt="" class="articles__foto">
+                </a>                            
+            </div>
+            <div class="articles__content">
+                <a href="#">
+                    <h4 class="articles__title">Чистый код. Создание, анализ и рефакторинг. Роберт Мартин</h4>
+                </a>
+                <div class="articles__cat">Книги</div>
+                <div class="articles__text">
+                    <p> Прочитана 1\3. Прочитал главы относящиеся к следующим составным звеньям крепкой цепи под названием "ЧИСТЫЙ КОД" и описал свои выводы:</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 <!--JS-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

@@ -51,6 +51,12 @@
         z-index: 1;
 
         transition: width .2s linear;
+
+        @media @mobile {
+            bottom: 1px;
+            height: 1px;
+            left: 20px;           
+        }
     }
 
     &:hover:not(.nav__link--btn){
@@ -76,11 +82,13 @@
             }
 
         }
+
+        @media @mobile {
+            font-size: 15px;
+            width: 100%;
+            margin-left: 0;
+            padding: .5rem;
+            border: none;
+        }
     }
 
-    @media @mobile {
-        width: 100%;
-        margin-left: 0;
-        padding: .5rem 1rem;
-        border: none;
-    }
