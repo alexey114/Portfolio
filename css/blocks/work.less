@@ -4,6 +4,8 @@
     overflow: hidden;
     min-height: 100%;
     margin-left: 10px;
+    display: flex;
+    flex-direction: column;
 
     border-radius: 10px;
     box-shadow: 0 0 4px fade(#000, 25%);
@@ -26,7 +28,8 @@
 .work__image{
     display: block;
     max-width: 100%;
-    height: auto;
+    
+    flex-grow: 1;
 }
 
 .work__content{
@@ -47,4 +50,5 @@
     color: @black;
     text-transform: uppercase;
     font-weight: 700;
+    flex-shrink: 0;
 }
