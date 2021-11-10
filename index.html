@@ -11,24 +11,22 @@
 
     <!--cooc-->
 <div class="cookie">
-    <div class="cookie_items"></div>
+    <div class="cookie_items">
         <div class="cookie_item__text">
             <p>
-                Мы используем файлы cookie. Продолжив работу с сайтом, вы соглашаетесь с <a href="polisy.html" target="_blank">политикой конфиденциальности</a>
+                Мой сайт использует файлы cookie. Продолжив работу с сайтом, вы соглашаетесь с <a href="polisy.html" target="_blank">политикой конфиденциальности</a>
             </p>
         </div>
-        <button class="modal__close modal__close_cookie" type="button" data-close><img src="images/icon/close.svg" alt="Close"></button>      
+        <button class="modal__close modal__close_cookie" type="button" data-close><img src="images/icon/close.svg" alt="Close"></button>
     </div>
 </div>
-<?php echo "123" ?>
+
 <!--Header-->
     <header class="header">
         <div class="container">
             <div class="header__inner">
                 <div class="user">
-                    <div class="user__avatar">
-                        <img src="" alt="">
-                    </div>
+                    
                     <div class="user__content">
                         <div class="user__name">Бомко<br>Алексей</div>
                         <div class="user__prof">Frontend Developer</div>
@@ -92,10 +90,24 @@
             <h1 class="works_h1">Мои работы</h1>
             <div class="portfolio" id="portfolio">
                 <div class="portfolio__col" data-cat="layout ">
+                    <div class="work" data-modal="#modal_project_3">
+                        <img class="work__image" src="images/project_bom_bom/Bom Bom.webp" alt="Bom_Bom">
+                        <div class="work__content work__content_2">
+                            <div class="work__cat"><p>HTML,LESS,FLEX,Pixel Perfect,JS</p></div>
+                            <div class="work__title">
+                                <h5>Адаптивная верстка сайта</h5>
+                                <time class="work__date" datetime="2021-11-22 19:00">2021</time>
+                                    <!-- <div class="work__text">
+                                    </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio__col" data-cat="layout ">
                     <div class="work" data-modal="#modal_project_1">
                         <img class="work__image" src="images/project/Glasses_site.webp" alt="Glasses_site">
                         <div class="work__content">
-                            <div class="work__cat">HTML,CSS,Flex,Gulp</div>
+                            <div class="work__cat"><p>HTML,CSS,Flex,Gulp</p></div>
                             <div class="work__title">
                                 <h5>Адаптивная верстка сайта</h5>
                                 <time class="work__date" datetime="2021-11-22 19:00">2021</time>
@@ -109,7 +121,7 @@
                     <div class="work" data-modal="#modal_project_2">
                         <img class="work__image" src="images/project_meeting/Metting.webp" alt="Metting_site">
                         <div class="work__content work__content_2">
-                            <div class="work__cat">HTML,LESS,FLEX,Pixel Perfect</div>
+                            <div class="work__cat"><p>HTML,LESS,FLEX,Pixel Perfect</p></div>
                             <div class="work__title">
                                 <h5>Адаптивная верстка сайта</h5>
                                 <time class="work__date" datetime="2021-11-22 19:00">2021</time>
@@ -118,12 +130,8 @@
                             </div>
                         </div>
                     </div>
-                </div> 
                 </div>
-                
-                    
-                
-            
+            </div>
         </div>
     </div> <!--work-->
    <!--             </div>
@@ -309,7 +317,7 @@
  <!--   </div> <!--reviews-->
 
 <!-- news -->
-     <section class="news">
+    <section class="news">
         <div class="container">
 
             <div class="news__header">
@@ -323,10 +331,7 @@
                 <div class="articles__col">
                     <div class="articles__item">
                         <div class="articles__header">
-                            <time class="articles__date">10<br>октября<br>2021</time>
-                            <a href="#">
-                               <img src="" alt="" class="articles__foto">
-                            </a>
+                            <time class="articles__date">10<br>октября<br>2021</time>                            
                         </div>
                         <div class="articles__content">
                             <a href="btn">
@@ -342,8 +347,9 @@
                 </div> <!--articles__col-->
 
 
-            <div class="news__footer">
-                <a class="news__link" href="#">Вверх</a>
+                <div class="news__footer">
+                    <a class="news__link" href="#">Вверх</a>
+                </div>
             </div>
 
         </div> <!-- /container -->
@@ -363,8 +369,7 @@
                     <a href="https://github.com/ALeXeY114" target="_blank"><img src="images/icon/github.svg" alt="Github"></a>
                     <a href="https://vk.com/abomko" target="_blank"><img src="images/icon/vk.svg" alt="VK"></a>
                     <a href="https://www.facebook.com/profile.php?id=100058785228181" target="_blank"><img src="images/icon/facebook.svg" alt="Facebook"></a>
-                    <a href="https://www.instagram.com/bomkoar/   " target="_blank"><img src="images/icon/instagram.svg" alt="Instagram"></a>  
-                                   
+                    <a href="https://www.instagram.com/bomkoar/   " target="_blank"><img src="images/icon/instagram.svg" alt="Instagram"></a>
                 </div>
                 <div class="footer__cookie">
                     <a href="polisy.html" target="_blank">Политика конфиденциальности</a>
@@ -425,8 +430,7 @@
 
                <div class="modal-work__header">
                    <h3 class="modal-work__title">АДАПТИВНАЯ ВЕРСКА САЙТА</h3>
-                   <div class="modal-work__info">
-                       HTML,CSS,Flex,Gulp<span class="modal-work__info-divider">|</span>2021
+                   <div class="modal-work__info"><span class="modal-work__info-divider"><p>HTML,CSS,Flex,Gulp | 2021</p></span>
                    </div>
                </div> <!--/modal-work__header-->
 
@@ -436,7 +440,7 @@
                </div> <!--/modal-work__client-->
 
               <div class="modal-work__text">
-                <p></p>Ссылка на сайт выложенный на GithubPages <a href="https://alexey114.github.io/" target="_blank"> alexey114.github.io</a></p>
+                <p>Ссылка на сайт выложенный на GithubPages <a href="https://alexey114.github.io/" target="_blank"> alexey114.github.io</a></p>
                 <p>Адаптивная верстка по макету из Photoshop с помощью CSS без предпроцессоров.</p>
                 <p>Адаптация под любые размеры экранов от мобильного телефона до монитора.</p>
                 <p>Сборка и разработка сайта проводилась с помощью сборки Gulp через package.json</p>
@@ -513,7 +517,7 @@
                <div class="modal-work__header">
                    <h3 class="modal-work__title">АДАПТИВНАЯ ВЕРСКА САЙТА</h3>
                    <div class="modal-work__info">
-                       <span class="modal-work__info-divider">HTML,LESS,FLEX,Pixel Perfect|</span>2021
+                       <span class="modal-work__info-divider"><p>HTML,LESS,FLEX,Pixel Perfect | 2021</p></span>
                    </div>
                </div> <!--/modal-work__header-->
 
@@ -523,12 +527,107 @@
                </div> <!--/modal-work__client-->
 
              <div class="modal-work__text">
-                   <a href="https://competent-hawking-86728d.netlify.app/" target="_blank"><p></p>Ссылка на сайт</p></a>
+                   <a href="https://competent-hawking-86728d.netlify.app/" target="_blank"><p>Ссылка на сайт</p></a>
 
                     <p>Адаптивная верстка по макету из Figma с помощью LESS, FLEX и Pixel Perfect.</p>
                     <p>При написании сайта использовалась блочная модель с извлечением каждого блока сайта в отдельный файл и дальнейшим импортом.</p>
                     <p>Адаптация под любые размеры экранов от мобильного телефона до монитора.</p>
                     <p>Пройдите по ссылке и попробуйте адаптив!</p>
+
+               </div>
+
+               <div class="modal-work__footer">
+                   <button class="modal-work__btn modal-work__btn--prev slickPrev" type="button">
+                   <img src="images/back.svg" height="12px" alt="">
+                   Предыдущий
+                   </button>
+                   <button class="modal-work__btn modal-work__btn--next slickNext" type="button">
+                   Следующий
+                   <img src="images/next.svg" height="12px" alt="">
+                   </button>
+               </div>
+
+            </div>    <!--/modal__content-->
+
+       </div> <!--/modal__work-->
+
+    </div> <!--/modal__dialog-->
+
+</div>    <!--/modal-->
+
+<div class="modal" id="modal_project_3">
+    <div class="modal__dialog">
+
+        <button class="modal__close" type="button" data-close><img src="images/icon/close.svg" alt="Close"></button>
+
+        <div class="modal__work">
+
+           <div class="modal-work__preview">
+                <div data-slider="slick">
+                    <div>
+                        <img class="modal-work__photo" src="images/project_bom_bom/Bom Bom.webp" alt="Metting_site">
+                    </div>
+                    <div>
+                        <img class="modal-work__photo" src="images/project_bom_bom/Bom Bom_1.webp" alt="Metting_site">
+                    </div>
+                    <div>
+                        <img class="modal-work__photo" src="images/project_bom_bom/Bom Bom_2.webp" alt="Metting_site">
+                    </div>
+                    <div>
+                        <img class="modal-work__photo" src="images/project_bom_bom/Bom Bom_3.webp" alt="Metting_site">
+                    </div>
+                    <div>
+                        <img class="modal-work__photo" src="images/project_bom_bom/Bom Bom_4.webp" alt="Metting_site">
+                    </div>
+                    <div>
+                        <img class="modal-work__photo modal-work__photo_mobile" src="images/project_bom_bom/Bom Bom_m_1.webp" alt="Metting_site">
+                    </div>
+                    <div>
+                        <img class="modal-work__photo modal-work__photo_mobile" src="images/project_bom_bom/Bom Bom_m_2.webp" alt="Metting_site">
+                    </div>
+                    <div>
+                        <img class="modal-work__photo modal-work__photo_mobile" src="images/project_bom_bom/Bom Bom_m_3.webp" alt="Metting_site">
+                    </div>
+                    <div>
+                        <img class="modal-work__photo modal-work__photo_mobile" src="images/project_bom_bom/Bom Bom_m_4.webp" alt="Metting_site">
+                    </div>
+                    <div>
+                        <img class="modal-work__photo modal-work__photo_mobile" src="images/project_bom_bom/Bom Bom_m_5.webp" alt="Metting_site">
+                    </div>
+                    <div>
+                        <img class="modal-work__photo" src="images/project_bom_bom/Bom Bom_t_1.webp" alt="Metting_site">
+                    </div>
+                    <div>
+                        <img class="modal-work__photo" src="images/project_bom_bom/Bom Bom_t_2.webp" alt="Metting_site">
+                    </div>
+                    <div>
+                        <img class="modal-work__photo" src="images/project_bom_bom/Bom Bom_t_3.webp" alt="Metting_site">
+                    </div>
+                </div>
+           </div>
+
+           <div class="modal-work__content">
+
+               <div class="modal-work__header">
+                   <h3 class="modal-work__title">АДАПТИВНАЯ ВЕРСКА САЙТА</h3>
+                   <div class="modal-work__info">
+                       <span class="modal-work__info-divider"><p>HTML,LESS,FLEX,Pixel Perfect,JS | 2021</p></span>
+                   </div>
+               </div> <!--/modal-work__header-->
+
+             <div class="modal-work__client">
+                   <div class="modal-work__client-title">Задача:</div>
+                   <div class="modal-work__client-company">Практика верстки</div>
+               </div> <!--/modal-work__client-->
+
+             <div class="modal-work__text">
+                   <a href="https://goofy-leakey-f1996d.netlify.app/" target="_blank"><p>Ссылка на сайт</p></a>
+
+                    <p>Адаптивная верстка по макету из Figma с помощью LESS, FLEX и Pixel Perfect.</p>
+                    <p>При написании сайта использовалась блочная модель с извлечением каждого блока сайта в отдельный файл и дальнейшим импортом.</p>
+                    <p>Адаптация под любые размеры экранов от мобильного телефона до монитора.</p>
+                    <p>Реализована возможность добавлять и убирать товары со страницы магазина на JS. Далее корзина отображается на всех страницах и записи сохраняются даже после перезапуска браузера.  </p>
+                    <p>Пройдите по <a href="https://goofy-leakey-f1996d.netlify.app/" target="_blank">ссылке</a> и попробуйте !</p>
 
                </div>
 
